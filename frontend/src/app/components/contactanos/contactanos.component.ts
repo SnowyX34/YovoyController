@@ -13,7 +13,7 @@ export class ContactoComponent {
   mensajeRespuesta: string = '';
   error: string = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
 
   enviarFormulario() {
     const data = { nombre: this.nombre, correo: this.correo, mensaje: this.mensaje };
